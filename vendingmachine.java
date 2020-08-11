@@ -8,6 +8,8 @@ public class vendingmachine {
 		Scanner sc = new Scanner(System.in); 
 		System.out.println("Welcome to the Automated Vending Machine!!!\n");
 
+		//Asks user to input their credit amount
+		
 		System.out.println("Please enter in your credit amount: ");
 		double credit = sc.nextDouble();
 		while (credit < 15.90) {
@@ -15,6 +17,8 @@ public class vendingmachine {
 			System.out.println("Please enter in sufficient amount of funds: ");
 			credit = sc.nextDouble();
 		}
+		
+		//Menu and submenus for options of items to be purchased
 
 		System.out.println("Please select an option from the items below for purchase:\n(1)Chocolate\n(2)Potatoe Chips\n(3)Cold drink\n(4)Mobile Data");
 		int select = sc.nextInt();
